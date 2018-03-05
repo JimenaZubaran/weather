@@ -45,7 +45,7 @@ template +=
     e.preventDefault();
    let city = cityId.value;
     console.log(city);
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&APPID=fe22ef8636a3e5a7317f82c404af6b2f`).then(data =>{
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&APPID=fe22ef8636a3e5a7317f82c404af6b2f`).then(data =>{
         data.json().then(function (json){
             console.log(json);
             paintWeather(json);
